@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune FouR Industries - Rebar Coupler & Threading Job Works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#1e293b', // Slate 800 - Deep, professional dark
+                        'brand-accent': '#ea580c', // Orange 600 - Bold, industrial accent
+                        'brand-light': '#f8fafc', // Slate 50 - Off-white
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-brand-light font-sans">
+
+    <header class="fixed top-0 left-0 w-full bg-brand-dark bg-opacity-95 shadow-lg z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <i class="fa-solid fa-building text-3xl text-brand-accent"></i>
+                <span class="text-2xl font-extrabold text-brand-light">Fortune Four Industries
+            </a>
+            
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-sm font-medium text-gray-300 hover:text-brand-accent transition duration-300">About Us</a>
+                <a href="#superiority" class="text-sm font-medium text-gray-300 hover:text-brand-accent transition duration-300">Technology</a>
+                <a href="#products" class="text-sm font-medium text-gray-300 hover:text-brand-accent transition duration-300">Products</a>
+                <a href="#clients" class="text-sm font-medium text-gray-300 hover:text-brand-accent transition duration-300">Clients</a>
+                <a href="#gallery" class="text-sm font-medium text-gray-300 hover:text-brand-accent transition duration-300">Gallery</a>
+                <a href="#contact" class="text-sm font-medium text-gray-300 hover:text-brand-accent transition duration-300">Contact</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden text-brand-light focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden md:hidden bg-brand-dark py-2 border-t border-gray-700">
+            <a href="#about" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-brand-accent" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About Us</a>
+            <a href="#superiority" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-brand-accent" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Technology</a>
+            <a href="#products" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-brand-accent" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Products</a>
+            <a href="#clients" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-brand-accent" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Clients</a>
+            <a href="#gallery" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-brand-accent" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Gallery</a>
+            <a href="#contact" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-brand-accent" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+
+        <section id="home" class="relative overflow-hidden pt-32 pb-24 lg:pt-40 lg:pb-32 bg-gray-900 border-b border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <p class="text-base font-semibold text-brand-accent uppercase tracking-wider mb-3">Pune's Leading Manufacturer since 2017</p>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-6">
+                    Mechanical Splicing for <span class="text-brand-accent">Smarter Construction</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                    Manufacturing **Rebar Couplers** and providing precision **Threading Job Works** for TMT bars at site. Achieve strength, simplicity, and efficiency on your projects.
+                </p>
+                <a href="#products" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-lg text-white bg-brand-accent hover:bg-orange-700 transition duration-300 transform hover:scale-105">
+                    Explore Our Couplers
+                </a>
+            </div>
+            <div class="absolute inset-0 opacity-10 bg-[url('https://placehold.co/100x100/1e293b/FFFFFF/pattern.svg')]"></div>
+        </section>
+
+        <section id="about" class="py-16 lg:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-brand-light border-b-2 border-brand-accent pb-2 inline-block">About Fortune FouR</h2>
+                        <p class="text-gray-400 text-lg">
+                            Established in 2017, **Fortune FouR Industries** has quickly become a premier manufacturer of Rebar Couplers in Pune. We are committed to providing exceptional value on every project through active process management, effective communication, and stringent quality control methods.
+                        </p>
+                        <p class="text-gray-400">
+                            Our facility is equipped with **ultra-modern tools and machinery**, including our DOOSAN 2011 equipment, ensuring that only top-notch basic material is used in the development of all coupler sizes. Customer satisfaction is our top priority, and we ensure **on-time and on-budget delivery**, tailoring our services to meet unique client needs.
+                        </p>
+                        <p class="text-sm italic text-gray-500">
+                            Our commitment extends to customization facilities, earning us a huge number of satisfied customers across the industry.
+                        </p>
+                    </div>
+                    <div class="p-4 bg-gray-800 rounded-xl shadow-2xl border-l-4 border-brand-accent hidden md:block">
+                        <img src="https://image.made-in-china.com/365f3j00dGjVtShqERkK/Rebar-Coupler-for-Rebar-Mechanical-Splicing-System.webp" 
+                             alt="Placeholder image of Rebar Couplers providing continuity in reinforcement." 
+                             class="w-full h-auto rounded-lg object-cover">
+                        <p class="text-center text-gray-500 text-sm mt-3">Advanced Mechanical Splicing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="superiority" class="bg-gray-900 py-16 lg:py-24 border-t border-b border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12">The Superiority of <span class="text-brand-accent">Ecofix Mechanical Splicing</span></h2>
+                <p class="text-lg text-gray-400 max-w-4xl mx-auto mb-16">
+                    Moving beyond the **old method of over lapping** (lap joints), our mechanical couplers offer robust solutions for all bar diameters, significantly improving construction efficiency, integrity, and cost.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-6 bg-gray-800 rounded-lg shadow-xl hover:shadow-brand-accent/50 transition duration-300 transform hover:translate-y-[-5px]">
+                        <i class="fa-solid fa-bolt text-4xl text-brand-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Technically Superior</h3>
+                        <p class="text-gray-400 text-sm">
+                            Spliced rebar performs like **continuous reinforcement**. It develops strength mechanically, providing essential **ductility in RCC structures** independent of the concrete. Proven cyclic performance offers reliability during seismic or other natural events.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-gray-800 rounded-lg shadow-xl hover:shadow-brand-accent/50 transition duration-300 transform hover:translate-y-[-5px]">
+                        <i class="fa-solid fa-drafting-compass text-4xl text-brand-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Designer Friendly</h3>
+                        <p class="text-gray-400 text-sm">
+                            Couplers **reduce rebar congestion** and greatly improve concrete flow and consolidation. This offers greater flexibility in design options, simplifies detailing of reinforcement, and minimizes fixing errors in congestion zones.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-gray-800 rounded-lg shadow-xl hover:shadow-brand-accent/50 transition duration-300 transform hover:translate-y-[-5px]">
+                        <i class="fa-solid fa-wallet text-4xl text-brand-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Contractor's Preference</h3>
+                        <p class="text-gray-400 text-sm">
+                            Couplers offer significant **quality, cost, and time savings**. Fixing them requires no special skills, accelerates construction schedules, and is highly economical, especially for higher diameter rebar where lap wastage is high.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="py-16 lg:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 border-b-2 border-brand-accent pb-2 inline-block">Our Products & Services</h2>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl text-left">
+                        <i class="fa-solid fa-link text-5xl text-brand-accent mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-4">Rebar Couplers (Standard & Position)</h3>
+                        <p class="text-gray-400 mb-4">
+                            We manufacture a full range of mechanical rebar couplers designed for full strength threaded butt splicing. Available in all sizes, our couplers ensure effective load transfer and continuity that surpasses conventional lap splicing.
+                        </p>
+                        <ul class="text-sm text-gray-400 space-y-2 list-disc pl-5">
+                            <li>**Standard Coupler:** Simple, fast assembly for fixed bars.</li>
+                            <li>**Position Coupler:** Ideal for closure joints where neither bar can be rotated, utilizing a lock nut for final tightening.</li>
+                            <li>Installation requires only hand tightening followed by a pipe wrench or torque wrench.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-2xl text-left">
+                        <i class="fa-solid fa-gears text-5xl text-brand-accent mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-4">Threading Machines & Job Works</h3>
+                        <p class="text-gray-400 mb-4">
+                            We provide on-site **TMT Bar Threading Job Works** carried out by Fortune FouR Industries trained operators, using proprietary banded threading equipment.
+                        </p>
+                        <ul class="text-sm text-gray-400 space-y-2 list-disc pl-5">
+                            <li>**Fully Automatic Rebar Threading Machine (16mm to 40mm)**: Available for rental or purchase.</li>
+                            <li>Ensures precise, taper threading on bar ends with thread checking gauges.</li>
+                            <li>Threading can be done on bent bars provided there is a straight length of over 0.5m.</li>
+                        </ul>
+                        <div class="mt-4 p-3 bg-gray-900 rounded-lg text-xs">
+                            <p class="font-bold text-brand-accent">Machine Specification Summary:</p>
+                            <p class="text-gray-500">Motor Power: 4kW/6H.P. | Electricity: 415V 50HZ | Net Weight: 550kg (Refer to brochure for full specs).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="py-16 lg:py-24 bg-gray-900 border-t border-b border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 border-b-2 border-brand-accent pb-2 inline-block">Our Esteemed Clients</h2>
+                <p class="text-lg text-gray-400 max-w-4xl mx-auto mb-10">
+                    We are proud to partner with leading construction and real estate groups, providing reliable mechanical splicing solutions for their projects.
+                </p>
+
+                <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+                    <div class="text-xl font-bold text-yellow-400 p-3 border border-gray-700 rounded-lg bg-gray-800 shadow-md">MANISHA GROUPS</div>
+                    <div class="text-xl font-bold text-yellow-400 p-3 border border-gray-700 rounded-lg bg-gray-800 shadow-md">SILVER GROUPS</div>
+                    <div class="text-xl font-bold text-yellow-400 p-3 border border-gray-700 rounded-lg bg-gray-800 shadow-md">PANDIT JAVDEKAR</div>
+                    <div class="text-xl font-bold text-yellow-400 p-3 border border-gray-700 rounded-lg bg-gray-800 shadow-md">ROSHAN BUILDERS</div>
+                    <div class="text-xl font-bold text-yellow-400 p-3 border border-gray-700 rounded-lg bg-gray-800 shadow-md">VIVAN GROUPS</div>
+                    <div class="text-xl font-bold text-yellow-400 p-3 border border-gray-700 rounded-lg bg-gray-800 shadow-md">ROSHAN BUILDERS</div>
+                    <div class="text-xl font-bold text-yellow-400 p-3 border border-gray-700 rounded-lg bg-gray-800 shadow-md">GARVE PROPERTIES</div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="py-16 lg:py-24 bg-gray-900 border-t border-b border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-12 border-b-2 border-brand-accent pb-2 inline-block">Our Work in Focus</h2>
+                <p class="text-lg text-gray-400 max-w-4xl mx-auto mb-10">
+                    A glimpse of our precision manufacturing process, high-grade **Rebar Couplers**, and powerful **Threading Machines** in action.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+                    <div class="overflow-hidden rounded-lg shadow-xl transform transition duration-300 hover:scale-[1.02]">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2024/1/378549949/JY/NQ/HU/101548654/rebar-couplers-in-ahmedabad-500x500.jpg" 
+                             alt="Precision-machined Rebar Couplers ready for splicing." 
+                             class="w-full h-40 md:h-56 object-cover hover:opacity-90 transition duration-300">
+                        <p class="text-sm p-2 bg-gray-800 text-gray-400">Rebar Couplers Stock</p>
+                    </div>
+
+                    <div class="overflow-hidden rounded-lg shadow-xl transform transition duration-300 hover:scale-[1.02]">
+                        <img src="https://www.mitroindustries.com/admin/uploads/616663402thread-rolling-machine-02.webp" 
+                             alt="Rebar Threading Machine." 
+                             class="w-full h-40 md:h-56 object-cover hover:opacity-90 transition duration-300">
+                        <p class="text-sm p-2 bg-gray-800 text-gray-400">Automatic Threading Unit</p>
+                    </div>
+
+                    <div class="overflow-hidden rounded-lg shadow-xl transform transition duration-300 hover:scale-[1.02]">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQufOUzfNwTbdrWpQo0I6dIt242_vhJ0HqttA&s" 
+                             alt=Cnc Turning Machine." 
+                             class="w-full h-40 md:h-56 object-cover hover:opacity-90 transition duration-300">
+                        <p class="text-sm p-2 bg-gray-800 text-gray-400">Perfect Spliced Joint</p>
+                    </div>
+
+                    <div class="overflow-hidden rounded-lg shadow-xl transform transition duration-300 hover:scale-[1.02]">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/10/BQ/GM/IZ/119515693/on-site-cold-forging-threading-service.PNG" 
+                             alt="Fortune Four Industries operator performing on-site threading job work." 
+                             class="w-full h-40 md:h-56 object-cover hover:opacity-90 transition duration-300">
+                        <p class="text-sm p-2 bg-gray-800 text-gray-400">Job Work in Progress</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gray-900 py-16 lg:py-24 border-t border-gray-700">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    
+                    <div class="space-y-6">
+                        <h2 class="text-3xl sm:text-4xl font-bold mb-4 border-b-2 border-brand-accent pb-2 inline-block">Get in Touch</h2>
+                        <p class="text-lg text-gray-400">
+                            We are ready to provide exceptional value to your next project. Contact us today for a quote or technical consultation.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-phone-volume text-brand-accent mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Phone (Sales & Service):</p>
+                                    <p class="text-gray-400">9545004777 / 9130510759 / 9890095525</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-envelope text-brand-accent mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Email:</p>
+                                    <p class="text-gray-400">contactfortunefour@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-location-dot text-brand-accent mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Office Address:</p>
+                                    <p class="text-gray-400">Dolphin Capital Office No. 53, Opposite MSEB Power House, MIDC, Bhosari, Pune- 411026</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i class="fa-solid fa-factory text-brand-accent mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Work Address:</p>
+                                    <p class="text-gray-400">S-47, MIDC Bhosari, Pune - 411026.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+               <div class="p-4 bg-gray-800 rounded-xl shadow-2xl h-96">
+                        <h3 class="text-xl font-semibold mb-3">Our Location (Office)</h3>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.252037905391!2d73.84651337482597!3d18.660144566861614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c72b26090a9b%3A0x280e8c45d31405a7!2sDolphin%20Capital!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="256" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="rounded-lg">
+                        </iframe>
+                        <p class="text-xs text-gray-500 mt-2">GST No.: 27AAFFF9860L1ZT</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-950 py-6 border-t border-brand-accent/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            © 2025 Fortune FouR Industries. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
